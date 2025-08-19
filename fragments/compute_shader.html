@@ -1,0 +1,87 @@
+<div id="sim-buttons">
+  <fieldset style=" margin-bottom: 10px;">
+      <legend><b style="font-size: 1.2em;">Resolution</b></legend>
+      <div style="display:flex;justify-content:center;align-items:center;font-size:small;padding:10px;">
+          <div class="input-container;" style="display:flex;justify-content: flex-end;align-items: center;">
+              <input id="pixel_resolution" style = "direction: rtl;" class="slider candisable" type="range" min="1" max="25" step="1" value="1">
+              <input id="pixel_resolution_label" type="text" class="input-field label-input candisable"
+                  style="width: 100px; 
+                         height: 30px;
+                         font-size: 16px;
+                         margin-left: 10px;
+                         text-align: center;
+                         color: black;
+                         background-color: white;">
+          </div>
+      </div>
+  </fieldset>
+  <fieldset style=" margin-bottom: 10px;">
+      <legend><b style="font-size: 1.2em;">Hardware</b></legend>
+      <div style="display: flex; justify-content: center; align-items: center; padding: 10px;">
+        CPU&nbsp;&nbsp;
+          <label class="switch">
+              <input type="checkbox" id="gpuCheckBox" value="gpu" >
+              <span class="checkSlider round"></span>
+            </label>
+            &nbsp;&nbsp;GPU
+      </div>
+    </fieldset>
+  <fieldset style=" margin-bottom: 10px;">
+      <legend><b style="font-size: 1.2em;">View</b></legend>
+      <div style="display: flex; justify-content: center; align-items: center; padding: 15px;">
+        <div class="custom-radio" style="display: flex; gap: 24px; align-items: center;">
+          <input type="radio" id="ortho" name="view" value="orthographic" checked>
+          <label for="ortho">Orthographic</label>
+          <input type="radio" id="persp" name="view" value="perspective" >
+          <label for="persp">Perspective</label>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset style=" margin-bottom: 10px;">
+      <legend><b style="font-size: 1.2em;">Shading</b></legend>
+      <div style="display: flex; flex-direction: column; align-items: center; padding: 15px;">
+        <div class="custom-radio" style="display: flex; gap: 24px; align-items: center;">
+          <input type="radio" id="flat" name="shading" value="flat">
+          <label for="flat">Flat</label>
+          <input type="radio" id="phong" name="shading" value="phong" checked>
+          <label for="phong">Phong</label>
+        </div>
+        <div class="input-container" style="display:flex;justify-content: center;align-items: center; margin-top:15px;">
+          <label for="ambientLight" style="font-size: 1.0em;margin-right: 8px;">Ambient Light</label>
+          <input id="ambientLight" style="direction: rtl;" class="slider candisable" type="range" min="0" max="1" step="0.05" value="0.5">
+        </div>
+      </div>
+    </fieldset>
+    <fieldset style=" margin-bottom: 10px;">
+      <legend><b style="font-size: 1.2em;">Primitive Select</b></legend>
+      <div style="display: flex; flex-direction: column; align-items: center; padding: 15px;">
+        <div class="custom-radio" style="display: flex; gap: 24px; align-items: center;">
+          <input type="radio" id="poly" name="primitive" value="poly" checked>
+          <label for="poly">Poly</label>
+          <input type="radio" id="line" name="primitive" value="line">
+          <label for="line">Line</label>
+          <input type="radio" id="polyline" name="primitive" value="polyline">
+          <label for="polyline">Poly + Line</label>
+        </div>
+        <div class="input-container" style="display:flex;justify-content: center;align-items: center; margin-top:15px;">
+          <input type="checkbox" id="referenceGrid" class="custom-checkbox"  checked/>
+          <label for="referenceGrid" class="checkbox-label" style="margin-left: 12px;">Reference Grid</label>
+        </div>          
+      </div>
+    </fieldset>
+    <fieldset style=" margin-bottom: 10px;">
+      <legend><b style="font-size: 1.2em;">Model</b></legend>
+      <div style="display: flex; justify-content: center; align-items: center; padding: 15px;">
+        <select id="model-select" class="dark-select">
+          <!-- <option value="wind_turbine">Wind Turbine</option> -->
+          <option value="turbo_prop">King Air B90</option>
+          <option selected="selected" value="bge_xrs">BGE-XRS</option>
+          <option value="turbo_fan">GE TF34</option>
+          <option value="f_14">F-14 Tomcat</option>
+        </select>
+      </div>
+    </fieldset>
+    
+    
+    
+</div>

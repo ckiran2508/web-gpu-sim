@@ -1,0 +1,118 @@
+<html><head>
+  <title>Web GPU Sim</title>
+<link rel="icon" type="image/x-icon" href="./resources/favi.ico"> 
+<link rel="stylesheet" href="style.css"/>
+
+</head>
+<body onload="loadJS('threeD/two_dwave.js');">
+ <div id="root"><header>
+<div class="nav-container">
+<div class="logo-container">
+  WebGPU Sim
+</div>
+<div class="github-about">
+</div>
+</div>
+</header>
+
+<div class="container">
+<div class="left">
+<ul id="all-topics">
+<p>Topics</p>
+<li><a onClick="invokeJS('threeD$compute_shader');">Compute Shaders</a></li>
+<li><a onClick="invokeJS('threeD$two_dwave');">Two D Wave</a></li>
+<li><a onClick="invokeJS('standing_waves');">Standing Waves</a></li>
+<li><a onClick="invokeJS('electrostatic_lens');">Electrostatic Lens (Bethe's Law)</a></li>
+<li><a onClick="invokeJS('electron_motion');">Charge Motion in a Magnetic field</a></li>
+<li><a onClick="invokeJS('newtons_cradle');">Newton's Cradle</a></li>
+<li><a onClick="invokeJS('elastic_collision');">Elastic Collision</a></li>
+<li><a onClick="invokeJS('point_gravity');">Point Gravity</a></li>
+<li><a onClick="invokeJS('surface_gravity');">Surface Gravity</a></li>
+<li><a onClick="invokeJS('guassian_blur');">Gaussian Blur</a></li>
+</ul>
+</div>
+
+<script>
+  function invokeJS(name){
+    const url = new URL(window.location.href);
+    const params = new URLSearchParams(url.search);
+    params.set('name', name);
+    url.search = params.toString();
+    window.location.href = url
+  }
+</script>
+
+<div class="main">
+
+ 
+  <div id="btn-group" style="display:none;z-index:2">
+    <div id="accelerating-anode" style="top:600; left:360; position:absolute;">
+      <input type="button" style="margin-right:30px;padding:3px;width:170px"  value="Hide Electric Field Vectors"/>
+      <input class="number-input-btn" type="button"  value="-"/>
+      <input class="number-input" type="text" value="0.4 kV" readonly="readonly"/>
+      <input class="number-input-btn" type="button"  value="+"/>
+    </div>
+    <div id="focusing-anode" style="top:600; left:780; position:absolute;">
+      <input class="number-input-btn" type="button"  value="-"/>
+      <input class="number-input" type="text" value="1.0 kV" readonly="readonly"/>
+      <input class="number-input-btn" type="button"  value="+"/>
+    </div>
+    <div style="top:602; left:950; position:absolute;">
+      <input id="reset" type="button" style="padding:3px" value="RESET"/>
+    </div>
+  </div>
+
+  <div>
+    <div id="positionValues" style="top:110; left:1040; position:absolute;font-size: 12px;">
+
+    </div>
+  </div>
+
+<div class="canvas-container">
+  <canvas style="z-index:1" id="myCanvas" >
+  </canvas>
+  <div class="canvas-spinner" style="display: block;"></div>
+</div>
+
+
+</div>
+<div id="button-container">
+</div>
+</div>
+<footer>
+<div class="center">
+<b>Developer</b>: Kiran Channayanamath
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b>Linkedin</b>: <u>https://www.linkedin.com/in/kiran-channayanamath/</u>
+</div>
+</footer>
+</div>
+<script type="text/javascript" src="vector.js"></script>
+<script type="text/javascript" src="particle.js"></script>
+<script type="text/javascript" src="rod.js" ></script>
+<script type="text/javascript" src="wire.js"></script>
+<script type="text/javascript" src="utils.js"></script>
+<script type="text/javascript" src="lbar.js"></script>
+<script type="text/javascript" src="collisionphysics.js"></script>
+<script type="text/javascript" src="loader.js" ></script>
+<script type="text/javascript" src="threeD/vector3d.js"></script>
+<script type="text/javascript" src="threeD/polygon3D.js"></script>
+<script type="text/javascript" src="threeD/threeDObject.js"></script>
+<script type="text/javascript" src="threeD/view_port.js"></script>
+<script type="text/javascript" src="threeD/point.js"></script>
+<script type="text/javascript" src="threeD/polygon2D.js"></script>
+<script type="text/javascript" src="threeD/twoDObject.js"></script>
+<script type="text/javascript" src="threeD/projector.js"></script>
+<script type="text/javascript" src="threeD/vector3DOps.js"></script>
+<script type="text/javascript" src="threeD/mesh.js"></script>
+<script type="text/javascript" src="threeD/mosfet_object.js"></script>
+<script type="text/javascript" src="threeD/spline2D.js"></script>
+<script type="text/javascript" src="threeD/spline3D.js"></script>
+<script type="text/javascript" src="threeD/pointObject.js"></script>
+<script type="text/javascript" src="threeD/mvp.js"></script>
+<script type="text/javascript" src="threeD/quats.js"></script>
+<script type="text/javascript" src="threeD/cpupipeline.js"></script>
+<script type="text/javascript" src="threeD/gpupipeline.js"></script>
+<script type="text/javascript" src="threeD/compute_shader_event_handler.js"></script>
+</body></html>

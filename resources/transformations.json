@@ -1,0 +1,191 @@
+{
+    "transformations": [
+        {
+            "name": "blades",
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "axis":{
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "angle": 0.00,
+                "position":{
+                    "x": 0,
+                    "y": 10,
+                    "z": 0
+                }
+            },
+              
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        {
+            "name": "propeller1",
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "axis":{
+                    "x": 1,
+                    "y": 0,
+                    "z": 0
+                },
+                "angle": -0.05,
+                "position":{
+                    "x": -54.434843785105336,
+                    "y":  9.343574177071673,
+                    "z": -30.82853254283424
+                }
+            },      
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        {
+            "name": "propeller2",
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "axis":{
+                    "x": 1,
+                    "y": 0,
+                    "z": 0
+                },
+                "angle": 0.05,
+                "position":{
+                    "x": -54.434843785105336,
+                    "y":  9.343574177071673,
+                    "z":  30.830468026909077
+                }
+            },      
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        {
+            "name": "cube",
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "axis":{
+                    "x": 0,
+                    "y": 1,
+                    "z": 0
+                },
+                "angle": 0.05,
+                "position":{
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+              
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        {
+            "name": "pyramid",
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "axis":{
+                    "x": 0,
+                    "y": 1,
+                    "z": 0
+                },
+                "angle": 0.05,
+                "position":{
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+              
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        {
+            "name": "turbo_fan",
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "axis":{
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "angle": 0.001,
+                "position":{
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+              
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        {
+            "name": "triangle",
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "axis":{
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "angle": 0.1,
+                "position":{
+                    "x": -20,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+              
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    ]
+}

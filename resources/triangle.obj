@@ -1,0 +1,19 @@
+# Equilateral Triangle with Perpendicular Normals
+
+# Vertices (XY plane)
+o triangle
+v  -20 0  0  
+v    0 0 20  
+v -40 0 20 
+
+
+
+vn 0 0.93 0.34
+vn 0.65 -0.65 0.34
+vn -0.65 -0.65 0.34
+
+
+
+# Face 1: Front (Red)
+f 3//3 2//2 1//1
+

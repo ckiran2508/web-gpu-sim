@@ -1,0 +1,24 @@
+{
+  "name": "2d_motion_illustrator",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify:JSFolder": "uglifyjs-folder . -o ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckiran2508/2d_motion_illustrator.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ckiran2508/2d_motion_illustrator/issues"
+  },
+  "homepage": "https://github.com/ckiran2508/2d_motion_illustrator#readme",
+  "description": "",
+  "devDependencies": {
+    "uglify-js": "^3.17.4",
+    "uglifyjs-folder": "^3.1.2"
+  }
+}
